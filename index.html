@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
     <title>wq</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +12,16 @@
 
 </head>
 <body>
-    <header>
-        <!-- commenting this out unless i want a logo -->
-        <!--
-        <div class="logo">wendy qiu</div> -->
+    <header>        
+        <a href="index.html">
+            <div class="logo"><img src="smile.png" alt="wq" /></div>
+          </a>
+          <!--
+          <img src="smile.png" alt="wq" /> -->
         <nav>
             <ul>
-                <li><a href="projects.html">Projects</a></li>
                 <li><a href="writing.html">Writing</a></li>
-                <li><a href="photography.html">Photography</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="photo2.html">Photography</a></li>
                 
             </ul>
         </nav>
@@ -31,23 +29,38 @@
     
     <section class="hero">
         <div class="hero-content">
-            <h1>hi, i'm wendy :) </h1>
-            <p class="intro-text">
-                welcome to my corner of the internet! currently builing in nyc, if you're in a similar position or want to connect, i'd love to meet you! besides building, you can find me running on WSH, 
-            </p>
-            <a href="#contact" class="cta-button">say hi!</a>
+          <h1>hi, i'm wendy :) </h1>
+          <p class="intro-text">
+            welcome to my corner of the internet! currently builing in nyc, if you're in a similar position or want to connect, i'd love to meet you!
+          </p>
+          <a href="mailto:hello@wendyqiu.com" class="cta-button">say hi!</a>
+          
+          <!-- Add the facts section directly inside hero-content -->
+          <div class="quick-facts">
+            <div class="fact-item">
+              <span class="fact-emoji">🫶</span>
+              <span class="fact-text"> all things active! (running, pickleball, climbing), skincare, fashion, music </span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-emoji">💻</span>
+              <span class="fact-text">fintech, AI/ML, edtech</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-emoji">🎓</span>
+              <span class="fact-text">computer science @ harvard</span>
+            </div>
+          </div>
         </div>
         <div class="profile-image">
-            <!-- Replace the src with your actual image path -->
-            <img src="wendypic.jpeg" alt="Wendy Qiu">
+          <img src="wendypic.jpeg" alt="Wendy Qiu">
         </div>
-    </section>
+      </section>
 
     
     <footer>
         <p>&copy; 2025 wendy qiu. All rights reserved.</p>
         <div class="social-links">
-            <a href="#" class="social-link">Email</a>
+            <a href="mailto:hello@wendyqiu.com" class="social-link">hello@wendyqiu.com</a>
             <a href="#" class="social-link">LinkedIn</a>
             <a href="#" class="social-link">Twitter</a>
         </div>
