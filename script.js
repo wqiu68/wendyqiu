@@ -8,4 +8,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Mobile menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.menu-btn');
+  const nav = document.querySelector('.nav');
+  
+  menuBtn.addEventListener('click', function() {
+    menuBtn.classList.toggle('open');
+    nav.classList.toggle('open');
+  });
+  
+  // Close menu when clicking a link
+  const navLinks = document.querySelectorAll('.nav-list li a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menuBtn.classList.remove('open');
+      nav.classList.remove('open');
+    });
+  });
+});
 </script>
+

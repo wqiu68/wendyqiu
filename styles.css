@@ -273,3 +273,124 @@
       font-size: 0.85rem;
     }
   }
+  
+  /* Add these styles for the mobile menu */
+.menu-btn {
+    display: none; /* Hidden on desktop */
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .menu-btn__burger {
+    width: 30px;
+    height: 3px;
+    background-color: var(--text-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--text-color);
+    transition: all 0.3s ease;
+  }
+  
+  .menu-btn__burger::before {
+    transform: translateY(-8px);
+  }
+  
+  .menu-btn__burger::after {
+    transform: translateY(8px);
+  }
+  
+  /* Open state for menu button */
+  .menu-btn.open .menu-btn__burger {
+    background: transparent;
+  }
+  
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg);
+  }
+  
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg);
+  }
+  
+  /* Update existing mobile styles */
+  @media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      position: relative;
+    }
+    
+    .menu-btn {
+      display: block; /* Show on mobile */
+    }
+    
+    /* Nav style for mobile */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: white;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+      transition: left 0.3s ease;
+      z-index: 1;
+    }
+    
+    .nav.open {
+      left: 0;
+    }
+    
+    .nav-list {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 70px 0 0 40px;
+    }
+    
+    .nav-list li {
+      margin: 1.5rem 0;
+    }
+    
+    /* Hero section mobile layout left-aligned */
+    .hero {
+      flex-direction: column-reverse;
+      text-align: left; /* Changed to left alignment */
+      padding: 2rem 0;
+      align-items: flex-start; /* Align to left */
+    }
+    
+    .profile-image {
+      margin: 0 auto 2rem;
+      width: 200px;
+      height: 200px;
+      align-self: center; /* Center image only */
+    }
+    
+    .hero-content {
+      width: 100%;
+      padding-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Changed to left alignment */
+    }
+    
+    .intro-text {
+      text-align: left; /* Changed to left alignment */
+    }
+  }
