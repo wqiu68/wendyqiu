@@ -4,99 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>writing| wendy qiu</title>
+    <title>writing | wq</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="writing.css">
 </head>
 <body>
     <header>
-        <!-- commenting this out unless i want a logo -->
-        <!--
-        <div class="logo">wendy qiu</div> -->
-        <nav>
-            <ul>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="writing.html">Writing</a></li>
-                <li><a href="photography.html">Photography</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                
-            </ul>
-        </nav>
+        <a href="index.html">
+            <div class="logo"><img src="smile.png" alt="wq" /></div>
+        </a>
     </header>
     
-    <section class="projects-overview">
-        <h1 class="section-title">My Projects</h1>
-        <p class="projects-intro">Explore my portfolio of work across various technologies and domains.</p>
+    <section class="writing-overview">
+        <h1 class="section-title">wendy's thoughts  </h1>
+        <p class="writing-intro">A collection of stories, thoughts and observations on topics that intrigue me. Please reach out if you have comments, questions or want to talk!  </p>
     </section>
     
-    <section class="projects-list">
-        <div class="project-item">
-            <div class="project-details">
-                <h2>Project 1 Name</h2>
-                <p class="project-description">A comprehensive description of the project, including the problem it solved, the approach you took, and the impact it made.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">MongoDB</span>
-                </div>
-                <div class="project-links">
-                    <a href="project1.html" class="project-link">View Details</a>
-                    <a href="#" class="project-link">Live Demo</a>
-                    <a href="#" class="project-link">GitHub</a>
-                </div>
+    <section class="writing-list">
+
+        <!-- Writing Piece 1 -->
+        <div class="writing-item">
+            <div class="writing-header" onclick="toggleWriting(this)">
+                <h2>TBD</h2>
+                <span class="date">Jan 2025</span>
+                <div class="toggle-icon">+</div>
             </div>
-            <div class="project-image">Project 1 Image</div>
+            <div class="writing-preview">
+                <p>Caption</p>
+            </div>
+            <div class="writing-full">
+                <p> INSERT TEXT</p>
+            </div>
         </div>
         
-        <div class="project-item">
-            <div class="project-details">
-                <h2>Project 2 Name</h2>
-                <p class="project-description">A comprehensive description of the project, including the problem it solved, the approach you took, and the impact it made.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">TensorFlow</span>
-                    <span class="tech-tag">AWS</span>
-                </div>
-                <div class="project-links">
-                    <a href="project2.html" class="project-link">View Details</a>
-                    <a href="#" class="project-link">Live Demo</a>
-                    <a href="#" class="project-link">GitHub</a>
-                </div>
+        <!-- TBD -->
+        <!-- 
+        <div class="writing-item">
+            <div class="writing-header" onclick="toggleWriting(this)">
+                <h2>Title 2</h2>
+                <span class="date">February 15, 2025</span>
+                <div class="toggle-icon">+</div>
             </div>
-            <div class="project-image">Project 2 Image</div>
+            <div class="writing-preview">
+                <p>subtitle</p>
+            </div>
+            <div class="writing-full">
+                <p>INSERT TEXT</p>
+            </div>
         </div>
+        -->
         
-        <div class="project-item">
-            <div class="project-details">
-                <h2>Project 3 Name</h2>
-                <p class="project-description">A comprehensive description of the project, including the problem it solved, the approach you took, and the impact it made.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">Swift</span>
-                    <span class="tech-tag">Firebase</span>
-                    <span class="tech-tag">CoreML</span>
-                </div>
-                <div class="project-links">
-                    <a href="project3.html" class="project-link">View Details</a>
-                    <a href="#" class="project-link">Live Demo</a>
-                    <a href="#" class="project-link">GitHub</a>
-                </div>
+        <!-- Senior Thesis -->
+        <div class="writing-item">
+            <div class="writing-header" onclick="toggleWriting(this)">
+                <h2>An Unplugged Curriculum: Empowering All Middle Schoolers with Computational Thinking</h2>
+                <span class="date">May 2023</span>
+                <div class="toggle-icon">+</div>
             </div>
-            <div class="project-image">Project 3 Image</div>
+            <div class="writing-preview">
+                <p>Senior thesis for CS college degree. Reach out if you want to learn more! </p>
+            </div>
+            <div class="writing-full">
+                <p>Abstract: Computational thinking is a newly popularized concept, and many have argued for its place in the K-12 curricula. The pedagogical approach is one that creates discussion and debate on how to effectively educate the current and future generations. This thesis presents a novel way of teaching computational thinking skills, specifically to middle school students. The approach links computational thinking concepts to everyday life occurrences and utilizes a teaching strategy that combines aspects of Montessori, peer learning, and unplugged instruction. This method enhances students’ comprehension of computational thinking concepts, cultivates their long-term interest, and encourages their engagement with the material at a deeper level. It helps bridge the unfamiliarity gap many students have with computer science and computational thinking and introduces a new way of thinking about problems in this heavily computational world. A curriculum framework is provided along with sample units that can be used, edited, or iterated upon. With hopes to continuously equip students for the ubiquitous technological world around them, this work serves as a first step in a new direction.</p>
+                
         </div>
     </section>
     
     <footer>
-        <p>&copy; 2025 Wendy Qiu. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#" class="social-link">GitHub</a>
-            <a href="#" class="social-link">LinkedIn</a>
-            <a href="#" class="social-link">Twitter</a>
-        </div>
+        <p>&copy; 2025 wendy qiu. all rights reserved.</p>
     </footer>
     
-    <script src="script.js"></script>
+    <script>
+        function toggleWriting(element) {
+            // Find the parent writing-item
+            const writingItem = element.parentElement;
+            
+            // Toggle the active class
+            writingItem.classList.toggle('active');
+            
+            // Update the toggle icon
+            const toggleIcon = element.querySelector('.toggle-icon');
+            if (writingItem.classList.contains('active')) {
+                toggleIcon.textContent = '−';
+            } else {
+                toggleIcon.textContent = '+';
+            }
+        }
+    </script>
 </body>
 </html>
