@@ -1,0 +1,191 @@
+/* skincare.css */
+
+/* Intro section */
+.skincare-intro {
+    max-width: 800px;
+    margin: 3rem auto 2rem;
+    text-align: left;
+}
+
+.skincare-intro h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.skincare-intro p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Product categories section */
+.product-categories {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+}
+
+.category-tabs {
+    display: flex;
+    overflow-x: auto;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.tab-button:hover {
+    color: var(--primary-color);
+}
+
+.tab-button.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Product cards */
+.product-category {
+    display: none;
+}
+
+.product-category.active {
+    display: block;
+}
+
+.product-card {
+    display: flex;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    align-items: stretch; /* Add this to ensure children stretch vertically */
+}
+
+
+.product-details {
+    flex: 1;
+    padding: 2rem;
+}
+
+.product-details h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.product-details h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.product-description {
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.product-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-tag {
+    background-color: var(--light-gray);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.product-why {
+    font-style: italic;
+    color: #666;
+    border-left: 2px solid var(--primary-color);
+    padding-left: 1rem;
+}
+
+/* Skincare philosophy section */
+.skincare-philosophy {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+}
+
+.skincare-philosophy h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.skincare-philosophy p {
+    line-height: 1.7;
+    color: #555;
+    text-align: left;
+}
+
+
+.accutane-philosophy {
+    max-width: 800px;
+    padding: 1rem;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.accutane-philosophy h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5;
+    text-align: left;
+}
+
+.accutane-philosophy p {
+    line-height: 1.7;
+    color: #555;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-card {
+        flex-direction: column;
+    }
+    
+    .product-image {
+        height: 200px;
+    }
+    
+    .product-details {
+        padding: 1.5rem;
+    }
+    
+    .category-tabs {
+        justify-content: flex-start;
+    }
+    
+    .tab-button {
+        padding: 0.75rem 1rem;
+    }
+}
